@@ -1,0 +1,98 @@
+=================================================
+Project : math_79	start : 20/02/28 18:50
+Current failed test : org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest::testPerformClusterAnalysisDegenerate | 20/02/28 18:50
+Fri Feb 28 18:50:32 CET 2020 Fri Feb 28 18:50:32 CET 2020 : org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,40=>Find no block
+Fri Feb 28 18:50:32 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,41
+Fri Feb 28 18:50:33 CET 2020 Fri Feb 28 18:50:33 CET 2020 : org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,42=>Find no block
+Fri Feb 28 18:50:33 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,56
+Fri Feb 28 18:51:00 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,57
+Fri Feb 28 18:51:00 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,89
+Fri Feb 28 18:51:00 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,90
+Fri Feb 28 18:51:00 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,91
+Fri Feb 28 18:51:01 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,107
+Fri Feb 28 18:51:14 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,108
+Fri Feb 28 18:51:14 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,111
+Fri Feb 28 18:51:43 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,112
+Fri Feb 28 18:52:17 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,114
+Fri Feb 28 18:52:17 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,115
+Fri Feb 28 18:59:11 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,139
+Fri Feb 28 19:01:26 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,153
+Fri Feb 28 19:01:32 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,154
+Fri Feb 28 19:01:32 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,155
+Fri Feb 28 19:01:32 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,156
+Fri Feb 28 19:01:32 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,157
+Fri Feb 28 19:01:32 CET 2020 Fri Feb 28 19:01:32 CET 2020 : org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,161=>Find no block
+Fri Feb 28 19:01:32 CET 2020 org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer,162
+Fri Feb 28 19:01:32 CET 2020 Fri Feb 28 19:01:32 CET 2020 : org.apache.commons.math.stat.clustering.Cluster,45=>Find no block
+Fri Feb 28 19:01:32 CET 2020 org.apache.commons.math.stat.clustering.Cluster,46
+Fri Feb 28 19:01:33 CET 2020 org.apache.commons.math.stat.clustering.Cluster,47
+Fri Feb 28 19:01:33 CET 2020 Fri Feb 28 19:01:33 CET 2020 : org.apache.commons.math.stat.clustering.Cluster,48=>Find no block
+Fri Feb 28 19:01:33 CET 2020 org.apache.commons.math.stat.clustering.Cluster,71
+Fri Feb 28 19:01:33 CET 2020 org.apache.commons.math.stat.clustering.EuclideanIntegerPoint,57
+Fri Feb 28 19:01:34 CET 2020 org.apache.commons.math.util.MathUtils,1624
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+int sum=0;
+for(int i=NAN_GAP;i<p1.length;i++){
+ final int dp=p1[i]-p2[i];
+sum+=dp*dp;
+}
+return Math.sqrt(sum);
+
+Time : 20/02/28 19:01
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+double sum=0;
+for(int i=0;i<p1.length;i++){
+ final double dp=p1[i]-p2[i];
+sum+=dp*dp;
+}
+return Math.sqrt(sum);
+
+Time : 20/02/28 19:01
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.428571428571429 : [/home/florian/reproduce//math/math_79_buggy/src/main/java/org/apache/commons/math/util/MathUtils.java=>0,0]
+double sum=0;
+for(int i=0;i<p1.length;i++){
+ final double dp=p1[i]-p2[i];
+sum+=dp*dp;
+}
+return Math.sqrt(sum);
+
+Time : 20/02/28 19:02
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//math/math_79_buggy/src/main/java/org/apache/commons/math/util/MathUtils.java=>1624,1629]
+int sum=0;
+for(int i=0;i<p1.length;i++){
+ final int dp=p1[i]-p2[i];
+sum+=dp*dp;
+}
+return Math.sqrt(sum);
+
+Time : 20/02/28 19:02
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//math/math_79_buggy/src/main/java/org/apache/commons/math/util/MathUtils.java=>1624,1629]
+double sum=0;
+for(int i=0;i<p1.length;i++){
+ final double dp=p1[i]-p2[i];
+sum+=dp*dp;
+}
+return Math.sqrt(sum);
+
+Time : 20/02/28 19:02
+----------------------------------------
+Success time : 20/02/28 19:02

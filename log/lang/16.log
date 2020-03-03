@@ -1,0 +1,74 @@
+=================================================
+Project : lang_16	start : 20/02/28 09:35
+Current failed test : org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber | 20/02/28 09:35
+Fri Feb 28 09:36:06 CET 2020 org.apache.commons.lang3.math.NumberUtils,459
+Fri Feb 28 09:36:32 CET 2020 org.apache.commons.lang3.math.NumberUtils,470
+Fri Feb 28 09:46:11 CET 2020 org.apache.commons.lang3.math.NumberUtils,476
+Fri Feb 28 09:46:11 CET 2020 org.apache.commons.lang3.math.NumberUtils,478
+Fri Feb 28 09:49:35 CET 2020 org.apache.commons.lang3.math.NumberUtils,481
+Fri Feb 28 09:53:05 CET 2020 org.apache.commons.lang3.math.NumberUtils,484
+Fri Feb 28 09:56:49 CET 2020 org.apache.commons.lang3.math.NumberUtils,517
+Fri Feb 28 09:56:58 CET 2020 org.apache.commons.lang3.math.NumberUtils,518
+Fri Feb 28 09:57:07 CET 2020 org.apache.commons.lang3.math.NumberUtils,521
+Fri Feb 28 09:57:07 CET 2020 org.apache.commons.lang3.math.NumberUtils,531
+Fri Feb 28 09:57:19 CET 2020 org.apache.commons.lang3.math.NumberUtils,532
+Fri Feb 28 09:57:27 CET 2020 org.apache.commons.lang3.math.NumberUtils,533
+Fri Feb 28 09:57:27 CET 2020 org.apache.commons.lang3.math.NumberUtils,545
+Fri Feb 28 09:58:16 CET 2020 org.apache.commons.lang3.math.NumberUtils,551
+Fri Feb 28 10:00:49 CET 2020 org.apache.commons.lang3.math.NumberUtils,554
+Fri Feb 28 10:00:49 CET 2020 org.apache.commons.lang3.math.NumberUtils,556
+Fri Feb 28 10:01:50 CET 2020 org.apache.commons.lang3.math.NumberUtils,559
+Fri Feb 28 10:01:56 CET 2020 Fri Feb 28 10:01:56 CET 2020 : org.apache.commons.lang3.math.NumberUtils,560=>Find no block
+Fri Feb 28 10:01:57 CET 2020 org.apache.commons.lang3.math.NumberUtils,564
+Fri Feb 28 10:02:03 CET 2020 org.apache.commons.lang3.math.NumberUtils,572
+Fri Feb 28 10:02:11 CET 2020 org.apache.commons.lang3.math.NumberUtils,574
+Fri Feb 28 10:02:20 CET 2020 org.apache.commons.lang3.math.NumberUtils,575
+Fri Feb 28 10:02:20 CET 2020 org.apache.commons.lang3.math.NumberUtils,576
+Fri Feb 28 10:02:20 CET 2020 org.apache.commons.lang3.math.NumberUtils,445
+Fri Feb 28 10:02:41 CET 2020 org.apache.commons.lang3.math.NumberUtils,448
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+str=str.toLowerCase();
+if(StringUtils.isBlank(str)){
+throw new NumberFormatException("A blank string is not a valid number");
+}
+
+Time : 20/02/28 10:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.0203484586519547 : [/home/florian/reproduce//lang/lang_16_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java=>0,0]
+int delimLen=(delimiters==null?-1:delimiters.length);
+if(StringUtils.isEmpty(str)||delimLen==0){
+return str;
+}
+str=str.toLowerCase();
+return capitalize(str,delimiters);
+
+Time : 20/02/28 10:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//lang/lang_16_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java=>448,450]
+if(StringUtils.isBlank(str)){
+throw new NumberFormatException("A blank string is not a valid number");
+}
+
+Time : 20/02/28 10:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//lang/lang_16_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java=>448,450]
+str=str.toLowerCase();
+if(StringUtils.isBlank(str)){
+throw new NumberFormatException("A blank string is not a valid number");
+}
+
+Time : 20/02/28 10:03
+----------------------------------------
+Success time : 20/02/28 10:03

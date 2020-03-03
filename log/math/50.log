@@ -1,0 +1,76 @@
+=================================================
+Project : math_50	start : 20/02/28 19:47
+Current failed test : org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest::testIssue631 | 20/02/28 19:47
+Fri Feb 28 19:47:32 CET 2020 org.apache.commons.math.analysis.solvers.BaseSecantSolver,188
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+f0=ftol;
+if(x==x1){
+x0=0.5*(x0+x1-FastMath.max(rtol*FastMath.abs(x1),atol));
+f0=computeObjectiveValue(x0);
+}
+
+Time : 20/02/28 19:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+x0=x1;
+f0=ftol;
+if(x==x1){
+x0=0.5*(x0+x1-FastMath.max(rtol*FastMath.abs(x1),atol));
+f0=computeObjectiveValue(x0);
+}
+
+Time : 20/02/28 19:48
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(x==x0){
+x0=0.5*(x0+x1-FastMath.max(rtol*FastMath.abs(x1),atol));
+f0=computeObjectiveValue(x0);
+}
+
+Time : 20/02/28 19:48
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.9704787500656593 : [/home/florian/reproduce//math/math_50_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java=>0,0]
+for(m=j;m<n-1;m++){
+double delta=FastMath.abs(realEigenvalues[m])+FastMath.abs(realEigenvalues[m+1]);
+if(FastMath.abs(e[m])+delta==delta){
+break;
+}
+}
+
+Time : 20/02/28 19:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//math/math_50_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java=>187,190]
+if(x==x1){
+x0=0.5*(x0+x1-FastMath.max(rtol*FastMath.abs(x1),atol));
+f0=computeObjectiveValue(x0);
+}
+
+Time : 20/02/28 19:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//math/math_50_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java=>187,190]
+if(x==x0){
+x0=0.5*(x0+x1-FastMath.max(rtol*FastMath.abs(x1),atol));
+f0=computeObjectiveValue(x0);
+}
+
+Time : 20/02/28 19:49
+----------------------------------------
+Success time : 20/02/28 19:49

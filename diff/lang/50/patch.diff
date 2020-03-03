@@ -1,0 +1,37 @@
+diff --git a/src/java/org/apache/commons/lang/time/FastDateFormat.java b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+index 8a26f28..dad2bb3 100644
+--- a/src/java/org/apache/commons/lang/time/FastDateFormat.java
++++ b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+@@ -293,9 +293,12 @@ public class FastDateFormat extends Format {
+                 locale = Locale.getDefault();
+             }
+             try {
+-                SimpleDateFormat formatter = (SimpleDateFormat) DateFormat.getDateInstance(style, locale);
+-                String pattern = formatter.toPattern();
+-                format = getInstance(pattern, timeZone, locale);
++if(locale!=null){
++key=new Pair(key,locale);
++}
++SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateInstance(style,locale);
++String pattern=formatter.toPattern();
++format=getInstance(pattern,timeZone,locale);
+                 cDateInstanceCache.put(key, format);
+                 
+             } catch (ClassCastException ex) {
+@@ -472,10 +475,12 @@ public class FastDateFormat extends Format {
+                 locale = Locale.getDefault();
+             }
+             try {
+-                SimpleDateFormat formatter = (SimpleDateFormat) DateFormat.getDateTimeInstance(dateStyle, timeStyle,
+-                        locale);
+-                String pattern = formatter.toPattern();
+-                format = getInstance(pattern, timeZone, locale);
++if(locale!=null){
++key=new Pair(key,locale);
++}
++SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateTimeInstance(dateStyle,timeStyle,locale);
++String pattern=formatter.toPattern();
++format=getInstance(pattern,timeZone,locale);
+                 cDateTimeInstanceCache.put(key, format);
+ 
+             } catch (ClassCastException ex) {

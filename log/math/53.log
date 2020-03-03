@@ -1,0 +1,50 @@
+=================================================
+Project : math_53	start : 20/02/28 19:49
+Current failed test : org.apache.commons.math.complex.ComplexTest::testAddNaN | 20/02/28 19:49
+Fri Feb 28 19:49:32 CET 2020 org.apache.commons.math.complex.Complex,152
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+MathUtils.checkNotNull(rhs);
+if(isNaN||rhs.isNaN){
+return NaN;
+}
+return createComplex(real+rhs.getReal(),imaginary+rhs.getImaginary());
+
+Time : 20/02/28 19:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.800922844719878 : [/home/florian/reproduce//math/math_53_buggy/src/main/java/org/apache/commons/math/complex/Complex.java=>0,0]
+MathUtils.checkNotNull(rhs);
+if(isNaN||rhs.isNaN){
+return NaN;
+}
+return createComplex(real-rhs.getReal(),imaginary-rhs.getImaginary());
+
+Time : 20/02/28 19:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//math/math_53_buggy/src/main/java/org/apache/commons/math/complex/Complex.java=>152,154]
+MathUtils.checkNotNull(rhs);
+return createComplex(real+rhs.getReal(),imaginary+rhs.getImaginary());
+
+Time : 20/02/28 19:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//math/math_53_buggy/src/main/java/org/apache/commons/math/complex/Complex.java=>152,154]
+MathUtils.checkNotNull(rhs);
+if(isNaN||rhs.isNaN){
+return NaN;
+}
+return createComplex(real+rhs.getReal(),imaginary+rhs.getImaginary());
+
+Time : 20/02/28 19:50
+----------------------------------------
+Success time : 20/02/28 19:50

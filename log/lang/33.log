@@ -1,0 +1,50 @@
+=================================================
+Project : lang_33	start : 20/02/28 10:03
+Current failed test : org.apache.commons.lang3.ClassUtilsTest::testToClass_object | 20/02/28 10:03
+Fri Feb 28 10:03:45 CET 2020 org.apache.commons.lang3.ClassUtils,903
+Fri Feb 28 10:04:20 CET 2020 org.apache.commons.lang3.ClassUtils,904
+Fri Feb 28 10:04:20 CET 2020 org.apache.commons.lang3.ClassUtils,905
+Fri Feb 28 10:04:20 CET 2020 org.apache.commons.lang3.ClassUtils,906
+Fri Feb 28 10:04:20 CET 2020 org.apache.commons.lang3.ClassUtils,908
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=0;i<array.length;i++){
+classes[i]=array[i]==null?null:array[i].getClass();
+}
+
+Time : 20/02/28 10:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.5915452583170533 : [/home/florian/reproduce//lang/lang_33_buggy/src/main/java/org/apache/commons/lang3/ClassUtils.java=>0,0]
+for(int i=0;i<array.length;i++){
+Character b=array[i];
+result[i]=(b==null?valueForNull:b.charValue());
+}
+
+Time : 20/02/28 10:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//lang/lang_33_buggy/src/main/java/org/apache/commons/lang3/ClassUtils.java=>909,911]
+for(int i=0;i<array.length;i++){
+classes[i]=array[i].getClass();
+}
+
+Time : 20/02/28 10:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//lang/lang_33_buggy/src/main/java/org/apache/commons/lang3/ClassUtils.java=>909,911]
+for(int i=0;i<array.length;i++){
+classes[i]=array[i]==null?null:array[i].getClass();
+}
+
+Time : 20/02/28 10:04
+----------------------------------------
+Success time : 20/02/28 10:04

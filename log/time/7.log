@@ -1,0 +1,58 @@
+=================================================
+Project : time_7	start : 20/02/27 20:34
+Current failed test : org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_newYork_startOfYear | 20/02/27 20:34
+Thu Feb 27 20:35:23 CET 2020 Thu Feb 27 20:35:23 CET 2020 : org.joda.time.format.DateTimeParserBucket,373=>Find no block
+Thu Feb 27 20:35:23 CET 2020 org.joda.time.format.DateTimeParserBucket,374
+Thu Feb 27 20:35:54 CET 2020 org.joda.time.format.DateTimeParserBucket,375
+Thu Feb 27 20:35:54 CET 2020 org.joda.time.format.DateTimeParserBucket,377
+Thu Feb 27 20:37:36 CET 2020 org.joda.time.IllegalFieldValueException,314
+Thu Feb 27 20:37:36 CET 2020 org.joda.time.IllegalFieldValueException,323
+Thu Feb 27 20:37:40 CET 2020 org.joda.time.IllegalFieldValueException,325
+Thu Feb 27 20:37:40 CET 2020 org.joda.time.IllegalFieldValueException,326
+Thu Feb 27 20:37:40 CET 2020 Thu Feb 27 20:37:40 CET 2020 : org.joda.time.IllegalFieldValueException,328=>Find no block
+Thu Feb 27 20:37:40 CET 2020 org.joda.time.format.DateTimeFormatter,701
+Thu Feb 27 20:38:11 CET 2020 org.joda.time.format.DateTimeFormatter,702
+Thu Feb 27 20:38:12 CET 2020 org.joda.time.format.DateTimeFormatter,706
+Thu Feb 27 20:40:29 CET 2020 org.joda.time.format.DateTimeFormatter,707
+Thu Feb 27 20:44:15 CET 2020 org.joda.time.format.DateTimeFormatter,708
+Thu Feb 27 20:47:22 CET 2020 org.joda.time.format.DateTimeFormatter,709
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+long instantLocal=instantMillis+chrono.getZone().getOffset(instantMillis);
+chrono=selectChronology(chrono);
+int defaultYear=chrono.year().get(instantMillis);
+
+Time : 20/02/27 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 0.9714759713788307 : [/home/florian/reproduce//time/time_7_buggy/src/main/java/org/joda/time/format/DateTimeFormatter.java=>0,0]
+int millisOfDay=ISOChronology.getInstanceUTC().millisOfDay().get(millis);
+setMillis(getChronology().millisOfDay().set(getMillis(),millisOfDay));
+
+Time : 20/02/27 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//time/time_7_buggy/src/main/java/org/joda/time/format/DateTimeFormatter.java=>708,710]
+long instantLocal=instantMillis+chrono.getZone().getOffset(instantMillis);
+chrono=selectChronology(chrono);
+int defaultYear=chrono.year().get(instantLocal);
+
+Time : 20/02/27 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//time/time_7_buggy/src/main/java/org/joda/time/format/DateTimeFormatter.java=>708,710]
+long instantLocal=instantMillis+chrono.getZone().getOffset(instantMillis);
+chrono=selectChronology(chrono);
+int defaultYear=chrono.year().get(instantMillis);
+
+Time : 20/02/27 20:51
+----------------------------------------
+Success time : 20/02/27 20:51

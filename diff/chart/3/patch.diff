@@ -1,0 +1,38 @@
+diff --git a/source/org/jfree/data/time/TimeSeries.java b/source/org/jfree/data/time/TimeSeries.java
+index 795d791..3d69f2d 100644
+--- a/source/org/jfree/data/time/TimeSeries.java
++++ b/source/org/jfree/data/time/TimeSeries.java
+@@ -623,21 +623,19 @@ public class TimeSeries extends Series implements Cloneable, Serializable {
+                 }
+             }
+         }
+-        if (added) {
+-            updateBoundsForAddedItem(item);
+-            // check if this addition will exceed the maximum item count...
+-            if (getItemCount() > this.maximumItemCount) {
+-                TimeSeriesDataItem d = (TimeSeriesDataItem) this.data.remove(0);
+-                updateBoundsForRemovedItem(d);
+-            }
++findBoundsByIteration();
++if(added){
++updateBoundsForAddedItem(item);
++if(getItemCount()>this.maximumItemCount){
++TimeSeriesDataItem d=(TimeSeriesDataItem)this.data.remove(0);
++updateBoundsForRemovedItem(d);
++}
++removeAgedItems(false);
++if(notify){
++fireSeriesChanged();
++}
++}
+ 
+-            removeAgedItems(false);  // remove old items if necessary, but
+-                                     // don't notify anyone, because that
+-                                     // happens next anyway...
+-            if (notify) {
+-                fireSeriesChanged();
+-            }
+-        }
+ 
+     }
+ 

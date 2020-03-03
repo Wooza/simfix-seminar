@@ -1,0 +1,53 @@
+=================================================
+Project : math_33	start : 20/02/28 18:11
+Current failed test : org.apache.commons.math3.optimization.linear.SimplexSolverTest::testMath781 | 20/02/28 18:11
+Fri Feb 28 18:11:42 CET 2020 org.apache.commons.math3.optimization.linear.Relationship,59
+Fri Feb 28 18:11:45 CET 2020 org.apache.commons.math3.optimization.linear.SimplexTableau,406
+Fri Feb 28 18:13:19 CET 2020 org.apache.commons.math3.optimization.linear.SimplexTableau,407
+Fri Feb 28 18:13:19 CET 2020 Fri Feb 28 18:13:19 CET 2020 : org.apache.commons.math3.optimization.linear.Relationship,57=>Find no block
+Fri Feb 28 18:13:20 CET 2020 org.apache.commons.math3.optimization.linear.SimplexTableau,261
+Fri Feb 28 18:13:20 CET 2020 org.apache.commons.math3.optimization.linear.SimplexTableau,339
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(Precision.compareTo(entry,0.0,epsilon)>0){
+columnsToDrop.add(i);
+}
+
+Time : 20/02/28 18:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.641374071802713 : [/home/florian/reproduce//math/math_33_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java=>0,0]
+for(int i=getNumObjectiveFunctions();i<getWidth()-1;i++){
+ final double entry=tableau.getEntry(0,i);
+if(Precision.compareTo(entry,0.0,epsilon)<0){
+return false;
+}
+}
+
+Time : 20/02/28 18:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//math/math_33_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java=>338,340]
+if(Precision.compareTo(entry,0.0,maxUlps)>0){
+columnsToDrop.add(i);
+}
+
+Time : 20/02/28 18:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//math/math_33_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java=>338,340]
+if(Precision.compareTo(entry,0.0,epsilon)>0){
+columnsToDrop.add(i);
+}
+
+Time : 20/02/28 18:14
+----------------------------------------
+Success time : 20/02/28 18:14

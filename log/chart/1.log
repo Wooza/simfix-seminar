@@ -1,0 +1,94 @@
+=================================================
+Project : chart_1	start : 20/02/27 15:09
+Current failed test : org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests::test2947660 | 20/02/27 15:09
+Thu Feb 27 15:10:19 CET 2020 org.jfree.chart.renderer.category.AbstractCategoryItemRenderer,1793
+Thu Feb 27 15:10:39 CET 2020 org.jfree.chart.plot.CategoryPlot,1613
+Thu Feb 27 15:10:41 CET 2020 Thu Feb 27 15:10:41 CET 2020 : org.jfree.chart.plot.CategoryPlot,1614=>Find no block
+Thu Feb 27 15:10:41 CET 2020 org.jfree.chart.plot.CategoryPlot,1665
+Thu Feb 27 15:14:02 CET 2020 org.jfree.chart.plot.CategoryPlot,1667
+Thu Feb 27 15:14:21 CET 2020 org.jfree.chart.plot.CategoryPlot,1672
+Thu Feb 27 15:17:55 CET 2020 org.jfree.chart.plot.CategoryPlot,1673
+Thu Feb 27 15:17:55 CET 2020 org.jfree.chart.plot.CategoryPlot,1674
+Thu Feb 27 15:17:56 CET 2020 org.jfree.chart.plot.CategoryPlot,1675
+Thu Feb 27 15:17:56 CET 2020 org.jfree.chart.plot.CategoryPlot,1678
+Thu Feb 27 15:19:13 CET 2020 org.jfree.chart.plot.CategoryPlot,1679
+Thu Feb 27 15:23:30 CET 2020 org.jfree.chart.plot.CategoryPlot,1681
+Thu Feb 27 15:26:49 CET 2020 org.jfree.chart.plot.CategoryPlot,1682
+Thu Feb 27 15:26:49 CET 2020 Thu Feb 27 15:26:49 CET 2020 : org.jfree.chart.plot.CategoryPlot,1684=>Find no block
+Thu Feb 27 15:26:49 CET 2020 org.jfree.chart.plot.CategoryPlot,567
+Thu Feb 27 15:26:51 CET 2020 Thu Feb 27 15:26:51 CET 2020 : org.jfree.chart.plot.CategoryPlot,568=>Find no block
+Thu Feb 27 15:26:51 CET 2020 org.jfree.chart.plot.CategoryPlot,1339
+Thu Feb 27 15:27:01 CET 2020 Thu Feb 27 15:27:01 CET 2020 : org.jfree.chart.plot.CategoryPlot,1340=>Find no block
+Thu Feb 27 15:27:01 CET 2020 org.jfree.chart.plot.CategoryPlot,1358
+Thu Feb 27 15:27:47 CET 2020 org.jfree.chart.plot.CategoryPlot,1045
+Thu Feb 27 15:28:26 CET 2020 org.jfree.chart.plot.CategoryPlot,1046
+Thu Feb 27 15:28:26 CET 2020 org.jfree.chart.plot.CategoryPlot,1352
+Thu Feb 27 15:33:29 CET 2020 org.jfree.chart.plot.CategoryPlot,1353
+Thu Feb 27 15:33:29 CET 2020 org.jfree.chart.plot.CategoryPlot,1356
+Thu Feb 27 15:33:29 CET 2020 org.jfree.chart.plot.CategoryPlot,1357
+Thu Feb 27 15:33:30 CET 2020 org.jfree.chart.plot.CategoryPlot,1362
+Thu Feb 27 15:33:30 CET 2020 org.jfree.chart.plot.CategoryPlot,1365
+Thu Feb 27 15:33:30 CET 2020 Thu Feb 27 15:33:30 CET 2020 : org.jfree.chart.plot.CategoryPlot,1367=>Find no block
+Thu Feb 27 15:33:30 CET 2020 org.jfree.chart.renderer.category.LineAndShapeRenderer,201
+Thu Feb 27 15:33:31 CET 2020 Thu Feb 27 15:33:31 CET 2020 : org.jfree.chart.renderer.category.LineAndShapeRenderer,202=>Find no block
+Thu Feb 27 15:33:31 CET 2020 Thu Feb 27 15:33:31 CET 2020 : org.jfree.chart.util.SortOrder,74=>Find no block
+Thu Feb 27 15:33:31 CET 2020 org.jfree.chart.util.SortOrder,75
+Thu Feb 27 15:33:43 CET 2020 Thu Feb 27 15:33:43 CET 2020 : org.jfree.chart.util.SortOrder,76=>Find no block
+Thu Feb 27 15:33:43 CET 2020 Thu Feb 27 15:33:43 CET 2020 : org.jfree.chart.axis.CategoryAnchor,75=>Find no block
+Thu Feb 27 15:33:43 CET 2020 org.jfree.chart.axis.CategoryAnchor,76
+Thu Feb 27 15:33:43 CET 2020 Thu Feb 27 15:33:43 CET 2020 : org.jfree.chart.axis.CategoryAnchor,77=>Find no block
+Thu Feb 27 15:33:43 CET 2020 org.jfree.chart.renderer.category.AbstractCategoryItemRenderer,1791
+Thu Feb 27 15:34:04 CET 2020 org.jfree.chart.renderer.category.AbstractCategoryItemRenderer,1792
+Thu Feb 27 15:34:04 CET 2020 org.jfree.chart.renderer.category.AbstractCategoryItemRenderer,1795
+Thu Feb 27 15:34:58 CET 2020 org.jfree.chart.renderer.category.AbstractCategoryItemRenderer,1796
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+int index=this.plot.getIndexOf(this);
+CategoryDataset dataset=this.plot.getDataset(index);
+if(dataset==null){
+return result;
+}
+
+Time : 20/02/27 15:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.5946799084892447 : [/home/florian/reproduce//chart/chart_1_buggy/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java=>0,0]
+CategoryAnchor anchor=getDomainGridlinePosition();
+RectangleEdge domainAxisEdge=getDomainAxisEdge();
+CategoryDataset dataset=getDataset();
+if(dataset==null){
+return ;
+}
+CategoryAxis axis=getDomainAxis();
+
+Time : 20/02/27 15:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//chart/chart_1_buggy/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java=>1795,1799]
+int index=this.plot.getIndexOf(this);
+CategoryDataset dataset=this.plot.getDataset(index);
+if(dataset!=null){
+return result;
+}
+
+Time : 20/02/27 15:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//chart/chart_1_buggy/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java=>1795,1799]
+int index=this.plot.getIndexOf(this);
+CategoryDataset dataset=this.plot.getDataset(index);
+if(dataset==null){
+return result;
+}
+
+Time : 20/02/27 15:35
+----------------------------------------
+Success time : 20/02/27 15:35

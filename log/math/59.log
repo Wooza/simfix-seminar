@@ -1,0 +1,38 @@
+=================================================
+Project : math_59	start : 20/02/28 19:50
+Current failed test : org.apache.commons.math.util.FastMathTest::testMinMaxFloat | 20/02/28 19:50
+Fri Feb 28 19:54:10 CET 2020 org.apache.commons.math.util.FastMath,3446
+Fri Feb 28 19:54:29 CET 2020 org.apache.commons.math.util.FastMath,3482
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return (a<=b)?b:(Float.isNaN(a+b)?Float.NaN:a);
+
+Time : 20/02/28 19:54
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.9943661523522511 : [/home/florian/reproduce//math/math_59_buggy/src/main/java/org/apache/commons/math/util/FastMath.java=>0,0]
+return (a<=b)?b:(Double.isNaN(a+b)?Double.NaN:a);
+
+Time : 20/02/28 19:55
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//math/math_59_buggy/src/main/java/org/apache/commons/math/util/FastMath.java=>3482,3482]
+return (a<=b)?b:(Float.isNaN(a+b)?Float.NaN:b);
+
+Time : 20/02/28 19:55
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//math/math_59_buggy/src/main/java/org/apache/commons/math/util/FastMath.java=>3482,3482]
+return (a<=b)?b:(Float.isNaN(a+b)?Float.NaN:a);
+
+Time : 20/02/28 19:55
+----------------------------------------
+Success time : 20/02/28 19:55

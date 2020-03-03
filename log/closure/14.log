@@ -1,0 +1,50 @@
+=================================================
+Project : closure_14	start : 20/02/27 19:19
+Current failed test : com.google.javascript.jscomp.CheckMissingReturnTest::testIssue779 | 20/02/27 19:19
+Thu Feb 27 19:23:16 CET 2020 com.google.javascript.jscomp.ControlFlowAnalysis,579
+Thu Feb 27 19:54:35 CET 2020 Thu Feb 27 19:54:35 CET 2020 : com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter,250=>Find no block
+Thu Feb 27 19:54:35 CET 2020 com.google.javascript.jscomp.ControlFlowAnalysis,767
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(Node finallyNode : cfa.finallyMap.get(parent)){
+cfa.createEdge(fromNode,Branch.ON_EX,finallyNode);
+}
+
+Time : 20/02/27 19:55
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.6182856494444295 : [/home/florian/reproduce//closure/closure_14_buggy/src/com/google/javascript/jscomp/ControlFlowAnalysis.java=>0,0]
+if(lastJump==cfgNode){
+createEdge(cfgNode,Branch.ON_EX,catchBlock);
+return ;
+}else {
+finallyMap.put(lastJump,catchBlock);
+}
+
+Time : 20/02/27 19:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//closure/closure_14_buggy/src/com/google/javascript/jscomp/ControlFlowAnalysis.java=>766,768]
+for(Node finallyNode : cfa.finallyMap.get(parent)){
+cfa.createEdge(fromNode,Branch.UNCOND,finallyNode);
+}
+
+Time : 20/02/27 19:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//closure/closure_14_buggy/src/com/google/javascript/jscomp/ControlFlowAnalysis.java=>766,768]
+for(Node finallyNode : cfa.finallyMap.get(parent)){
+cfa.createEdge(fromNode,Branch.ON_EX,finallyNode);
+}
+
+Time : 20/02/27 19:56
+----------------------------------------
+Success time : 20/02/27 19:56

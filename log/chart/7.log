@@ -1,0 +1,144 @@
+=================================================
+Project : chart_7	start : 20/02/27 16:52
+Current failed test : org.jfree.data.time.junit.TimePeriodValuesTests::testGetMaxMiddleIndex | 20/02/27 16:52
+Thu Feb 27 16:52:19 CET 2020 org.jfree.data.time.TimePeriodValues,552
+Thu Feb 27 16:52:20 CET 2020 org.jfree.data.time.TimePeriodValues,267
+Thu Feb 27 16:52:50 CET 2020 org.jfree.data.time.TimePeriodValues,292
+Thu Feb 27 16:53:09 CET 2020 org.jfree.data.time.TimePeriodValues,317
+Thu Feb 27 16:53:39 CET 2020 Thu Feb 27 16:53:39 CET 2020 : org.jfree.data.time.SimpleTimePeriod,76=>Find no block
+Thu Feb 27 16:53:39 CET 2020 org.jfree.data.time.SimpleTimePeriod,77
+Thu Feb 27 16:53:54 CET 2020 org.jfree.data.time.SimpleTimePeriod,80
+Thu Feb 27 16:54:11 CET 2020 org.jfree.data.time.SimpleTimePeriod,81
+Thu Feb 27 16:54:11 CET 2020 Thu Feb 27 16:54:11 CET 2020 : org.jfree.data.time.SimpleTimePeriod,82=>Find no block
+Thu Feb 27 16:54:11 CET 2020 org.jfree.data.time.SimpleTimePeriod,100
+Thu Feb 27 16:54:13 CET 2020 org.jfree.data.time.SimpleTimePeriod,120
+Thu Feb 27 16:54:14 CET 2020 org.jfree.data.time.TimePeriodValues,363
+Thu Feb 27 16:55:04 CET 2020 org.jfree.data.time.TimePeriodValues,364
+Thu Feb 27 16:55:04 CET 2020 Thu Feb 27 16:55:04 CET 2020 : org.jfree.data.time.TimePeriodValues,365=>Find no block
+Thu Feb 27 16:55:04 CET 2020 org.jfree.data.time.TimePeriodValues,375
+Thu Feb 27 16:55:04 CET 2020 org.jfree.data.time.TimePeriodValues,376
+Thu Feb 27 16:55:04 CET 2020 Thu Feb 27 16:55:04 CET 2020 : org.jfree.data.time.TimePeriodValues,377=>Find no block
+Thu Feb 27 16:55:04 CET 2020 Thu Feb 27 16:55:04 CET 2020 : org.jfree.data.time.Year,96=>Find no block
+Thu Feb 27 16:55:04 CET 2020 org.jfree.data.time.Year,97
+Thu Feb 27 16:58:51 CET 2020 org.jfree.data.time.Year,103
+Thu Feb 27 17:02:19 CET 2020 org.jfree.data.time.Year,104
+Thu Feb 27 17:02:19 CET 2020 Thu Feb 27 17:02:19 CET 2020 : org.jfree.data.time.Year,105=>Find no block
+Thu Feb 27 17:02:19 CET 2020 org.jfree.data.time.Year,150
+Thu Feb 27 17:02:28 CET 2020 org.jfree.data.time.Year,164
+Thu Feb 27 17:02:29 CET 2020 org.jfree.data.time.Year,176
+Thu Feb 27 17:02:39 CET 2020 org.jfree.data.time.Year,177
+Thu Feb 27 17:02:39 CET 2020 Thu Feb 27 17:02:39 CET 2020 : org.jfree.data.time.Year,178=>Find no block
+Thu Feb 27 17:02:39 CET 2020 org.jfree.data.time.Year,233
+Thu Feb 27 17:04:15 CET 2020 org.jfree.data.time.Year,234
+Thu Feb 27 17:04:15 CET 2020 org.jfree.data.time.Year,237
+Thu Feb 27 17:04:15 CET 2020 org.jfree.data.time.Year,252
+Thu Feb 27 17:05:50 CET 2020 org.jfree.data.time.Year,253
+Thu Feb 27 17:05:50 CET 2020 org.jfree.data.time.Year,256
+Thu Feb 27 17:05:50 CET 2020 org.jfree.data.time.TimePeriodValue,88
+Thu Feb 27 17:05:55 CET 2020 Thu Feb 27 17:05:55 CET 2020 : org.jfree.data.time.TimePeriodValue,89=>Find no block
+Thu Feb 27 17:05:55 CET 2020 Thu Feb 27 17:05:55 CET 2020 : org.jfree.data.time.RegularTimePeriod,70=>Find no block
+Thu Feb 27 17:05:55 CET 2020 org.jfree.data.time.RegularTimePeriod,182
+Thu Feb 27 17:05:56 CET 2020 org.jfree.data.time.RegularTimePeriod,194
+Thu Feb 27 17:05:57 CET 2020 Thu Feb 27 17:05:57 CET 2020 : org.jfree.data.time.TimePeriodValue,70=>Find no block
+Thu Feb 27 17:05:57 CET 2020 org.jfree.data.time.TimePeriodValue,71
+Thu Feb 27 17:06:13 CET 2020 org.jfree.data.time.TimePeriodValue,74
+Thu Feb 27 17:06:31 CET 2020 org.jfree.data.time.TimePeriodValue,75
+Thu Feb 27 17:06:31 CET 2020 Thu Feb 27 17:06:31 CET 2020 : org.jfree.data.time.TimePeriodValue,76=>Find no block
+Thu Feb 27 17:06:31 CET 2020 org.jfree.data.time.TimePeriodValue,97
+Thu Feb 27 17:06:32 CET 2020 org.jfree.data.time.TimePeriodValues,205
+Thu Feb 27 17:06:43 CET 2020 org.jfree.data.time.TimePeriodValues,243
+Thu Feb 27 17:06:52 CET 2020 org.jfree.data.time.TimePeriodValues,246
+Thu Feb 27 17:09:15 CET 2020 org.jfree.data.time.TimePeriodValues,247
+Thu Feb 27 17:09:15 CET 2020 org.jfree.data.time.TimePeriodValues,248
+Thu Feb 27 17:09:15 CET 2020 Thu Feb 27 17:09:15 CET 2020 : org.jfree.data.time.TimePeriodValues,249=>Find no block
+Thu Feb 27 17:09:15 CET 2020 org.jfree.data.time.TimePeriodValues,259
+Thu Feb 27 17:09:41 CET 2020 org.jfree.data.time.TimePeriodValues,260
+Thu Feb 27 17:09:41 CET 2020 org.jfree.data.time.TimePeriodValues,261
+Thu Feb 27 17:10:59 CET 2020 org.jfree.data.time.TimePeriodValues,263
+Thu Feb 27 17:10:59 CET 2020 org.jfree.data.time.TimePeriodValues,264
+Thu Feb 27 17:10:59 CET 2020 org.jfree.data.time.TimePeriodValues,266
+Thu Feb 27 17:11:00 CET 2020 Thu Feb 27 17:11:00 CET 2020 : org.jfree.data.time.TimePeriodValues,269=>Find no block
+Thu Feb 27 17:11:00 CET 2020 org.jfree.data.time.TimePeriodValues,271
+Thu Feb 27 17:11:00 CET 2020 org.jfree.data.time.TimePeriodValues,274
+Thu Feb 27 17:11:44 CET 2020 org.jfree.data.time.TimePeriodValues,275
+Thu Feb 27 17:11:44 CET 2020 org.jfree.data.time.TimePeriodValues,277
+Thu Feb 27 17:11:44 CET 2020 org.jfree.data.time.TimePeriodValues,278
+Thu Feb 27 17:11:44 CET 2020 Thu Feb 27 17:11:44 CET 2020 : org.jfree.data.time.TimePeriodValues,280=>Find no block
+Thu Feb 27 17:11:44 CET 2020 org.jfree.data.time.TimePeriodValues,282
+Thu Feb 27 17:11:44 CET 2020 org.jfree.data.time.TimePeriodValues,285
+Thu Feb 27 17:12:15 CET 2020 org.jfree.data.time.TimePeriodValues,286
+Thu Feb 27 17:12:15 CET 2020 org.jfree.data.time.TimePeriodValues,288
+Thu Feb 27 17:12:15 CET 2020 org.jfree.data.time.TimePeriodValues,290
+Thu Feb 27 17:12:15 CET 2020 org.jfree.data.time.TimePeriodValues,291
+Thu Feb 27 17:12:16 CET 2020 Thu Feb 27 17:12:16 CET 2020 : org.jfree.data.time.TimePeriodValues,294=>Find no block
+Thu Feb 27 17:12:16 CET 2020 org.jfree.data.time.TimePeriodValues,296
+Thu Feb 27 17:12:16 CET 2020 org.jfree.data.time.TimePeriodValues,299
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(this.maxMiddleIndex>=0){
+long s=getDataItem(this.maxMiddleIndex).getPeriod().getStart().getTime();
+long e=getDataItem(this.maxMiddleIndex).getPeriod().getEnd().getTime();
+long maxMiddle=s+(e-s)/2;
+if(middle>maxMiddle){
+this.maxMiddleIndex=index;
+}
+}else {
+this.maxMiddleIndex=index;
+}
+
+Time : 20/02/27 17:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.416666666666667 : [/home/florian/reproduce//chart/chart_7_buggy/source/org/jfree/data/time/TimePeriodValues.java=>0,0]
+if(this.minMiddleIndex>=0){
+long s=getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+long e=getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+long minMiddle=s+(e-s)/2;
+if(middle<minMiddle){
+this.minMiddleIndex=index;
+}
+}else {
+this.minMiddleIndex=index;
+}
+
+Time : 20/02/27 17:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//chart/chart_7_buggy/source/org/jfree/data/time/TimePeriodValues.java=>299,311]
+if(this.maxMiddleIndex>=0){
+long s=getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+long e=getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+long maxMiddle=s+(e-s)/2;
+if(middle>maxMiddle){
+this.maxMiddleIndex=index;
+}
+}else {
+this.maxMiddleIndex=index;
+}
+
+Time : 20/02/27 17:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//chart/chart_7_buggy/source/org/jfree/data/time/TimePeriodValues.java=>299,311]
+if(this.maxMiddleIndex>=0){
+long s=getDataItem(this.maxMiddleIndex).getPeriod().getStart().getTime();
+long e=getDataItem(this.maxMiddleIndex).getPeriod().getEnd().getTime();
+long maxMiddle=s+(e-s)/2;
+if(middle>maxMiddle){
+this.maxMiddleIndex=index;
+}
+}else {
+this.maxMiddleIndex=index;
+}
+
+Time : 20/02/27 17:12
+----------------------------------------
+Success time : 20/02/27 17:12

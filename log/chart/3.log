@@ -1,0 +1,159 @@
+=================================================
+Project : chart_3	start : 20/02/27 15:35
+Current failed test : org.jfree.data.time.junit.TimeSeriesTests::testCreateCopy3 | 20/02/27 15:35
+Thu Feb 27 15:35:35 CET 2020 org.jfree.data.time.TimeSeries,1050
+Thu Feb 27 15:35:58 CET 2020 org.jfree.data.time.TimeSeries,1053
+Thu Feb 27 15:36:20 CET 2020 org.jfree.data.time.TimeSeries,1056
+Thu Feb 27 15:45:01 CET 2020 org.jfree.data.time.TimeSeries,1057
+Thu Feb 27 15:55:21 CET 2020 org.jfree.data.time.TimeSeries,1058
+Thu Feb 27 15:55:21 CET 2020 org.jfree.data.time.TimeSeries,1059
+Thu Feb 27 15:55:21 CET 2020 org.jfree.data.time.TimeSeries,1060
+Thu Feb 27 15:55:21 CET 2020 org.jfree.data.time.TimeSeries,1062
+Thu Feb 27 15:55:21 CET 2020 org.jfree.data.time.TimeSeries,1064
+Thu Feb 27 15:55:21 CET 2020 Thu Feb 27 15:55:21 CET 2020 : org.jfree.data.time.TimeSeries,1068=>Find no block
+Thu Feb 27 15:55:21 CET 2020 org.jfree.data.time.TimeSeries,1071
+Thu Feb 27 15:56:30 CET 2020 org.jfree.data.time.TimeSeries,564
+Thu Feb 27 15:57:18 CET 2020 Thu Feb 27 15:57:18 CET 2020 : org.jfree.data.time.TimeSeries,565=>Find no block
+Thu Feb 27 15:57:18 CET 2020 org.jfree.data.general.Series,243
+Thu Feb 27 16:00:09 CET 2020 org.jfree.data.general.Series,244
+Thu Feb 27 16:00:09 CET 2020 org.jfree.data.general.Series,245
+Thu Feb 27 16:00:09 CET 2020 org.jfree.data.general.Series,246
+Thu Feb 27 16:00:09 CET 2020 org.jfree.data.time.TimeSeries,345
+Thu Feb 27 16:00:11 CET 2020 org.jfree.data.time.TimeSeries,360
+Thu Feb 27 16:00:12 CET 2020 org.jfree.data.time.TimeSeries,653
+Thu Feb 27 16:00:49 CET 2020 Thu Feb 27 16:00:49 CET 2020 : org.jfree.data.time.TimeSeries,654=>Find no block
+Thu Feb 27 16:00:49 CET 2020 org.jfree.data.time.TimeSeries,666
+Thu Feb 27 16:02:26 CET 2020 org.jfree.data.time.TimeSeries,667
+Thu Feb 27 16:02:27 CET 2020 Thu Feb 27 16:02:27 CET 2020 : org.jfree.data.time.TimeSeries,668=>Find no block
+Thu Feb 27 16:02:27 CET 2020 org.jfree.data.time.Year,171
+Thu Feb 27 16:02:28 CET 2020 org.jfree.data.time.Year,253
+Thu Feb 27 16:02:28 CET 2020 org.jfree.data.time.Year,348
+Thu Feb 27 16:02:43 CET 2020 org.jfree.data.time.Year,349
+Thu Feb 27 16:02:43 CET 2020 org.jfree.data.time.Year,350
+Thu Feb 27 16:02:43 CET 2020 Thu Feb 27 16:02:43 CET 2020 : org.jfree.data.time.Year,351=>Find no block
+Thu Feb 27 16:02:43 CET 2020 org.jfree.data.time.Year,367
+Thu Feb 27 16:04:06 CET 2020 Thu Feb 27 16:04:06 CET 2020 : org.jfree.data.time.Year,114=>Find no block
+Thu Feb 27 16:04:06 CET 2020 org.jfree.data.time.Year,115
+Thu Feb 27 16:08:18 CET 2020 org.jfree.data.time.Year,119
+Thu Feb 27 16:12:09 CET 2020 org.jfree.data.time.Year,120
+Thu Feb 27 16:12:09 CET 2020 Thu Feb 27 16:12:09 CET 2020 : org.jfree.data.time.Year,121=>Find no block
+Thu Feb 27 16:12:09 CET 2020 org.jfree.data.time.Year,211
+Thu Feb 27 16:12:23 CET 2020 org.jfree.data.time.Year,212
+Thu Feb 27 16:12:23 CET 2020 Thu Feb 27 16:12:23 CET 2020 : org.jfree.data.time.Year,213=>Find no block
+Thu Feb 27 16:12:23 CET 2020 org.jfree.data.time.Year,268
+Thu Feb 27 16:14:06 CET 2020 org.jfree.data.time.Year,269
+Thu Feb 27 16:14:06 CET 2020 org.jfree.data.time.Year,272
+Thu Feb 27 16:14:06 CET 2020 org.jfree.data.time.Year,287
+Thu Feb 27 16:15:50 CET 2020 org.jfree.data.time.Year,288
+Thu Feb 27 16:15:50 CET 2020 org.jfree.data.time.Year,291
+Thu Feb 27 16:15:50 CET 2020 org.jfree.data.time.TimeSeries,680
+Thu Feb 27 16:15:50 CET 2020 Thu Feb 27 16:15:50 CET 2020 : org.jfree.data.time.TimeSeries,681=>Find no block
+Thu Feb 27 16:15:50 CET 2020 org.jfree.data.time.TimeSeries,693
+Thu Feb 27 16:15:50 CET 2020 org.jfree.data.time.TimeSeries,694
+Thu Feb 27 16:15:50 CET 2020 Thu Feb 27 16:15:50 CET 2020 : org.jfree.data.time.TimeSeries,695=>Find no block
+Thu Feb 27 16:15:50 CET 2020 org.jfree.data.time.TimeSeriesDataItem,121
+Thu Feb 27 16:15:55 CET 2020 Thu Feb 27 16:15:55 CET 2020 : org.jfree.data.time.TimeSeriesDataItem,122=>Find no block
+Thu Feb 27 16:15:55 CET 2020 org.jfree.data.time.TimeSeries,429
+Thu Feb 27 16:16:10 CET 2020 org.jfree.data.time.TimeSeries,463
+Thu Feb 27 16:16:15 CET 2020 org.jfree.data.time.TimeSeries,584
+Thu Feb 27 16:20:40 CET 2020 org.jfree.data.time.TimeSeries,603
+Thu Feb 27 16:28:00 CET 2020 org.jfree.data.time.TimeSeries,604
+Thu Feb 27 16:29:13 CET 2020 org.jfree.data.time.TimeSeries,605
+Thu Feb 27 16:29:18 CET 2020 org.jfree.data.time.TimeSeries,606
+Thu Feb 27 16:29:18 CET 2020 org.jfree.data.time.TimeSeries,878
+Thu Feb 27 16:34:39 CET 2020 org.jfree.data.time.TimeSeries,879
+Thu Feb 27 16:34:39 CET 2020 Thu Feb 27 16:34:39 CET 2020 : org.jfree.data.time.TimeSeries,881=>Find no block
+Thu Feb 27 16:34:39 CET 2020 org.jfree.data.time.TimeSeries,885
+Thu Feb 27 16:37:11 CET 2020 org.jfree.data.time.TimeSeries,1269
+Thu Feb 27 16:37:33 CET 2020 org.jfree.data.time.TimeSeries,1273
+Thu Feb 27 16:37:33 CET 2020 org.jfree.data.time.TimeSeries,1292
+Thu Feb 27 16:37:55 CET 2020 org.jfree.data.time.TimeSeries,1296
+Thu Feb 27 16:37:55 CET 2020 Thu Feb 27 16:37:55 CET 2020 : org.jfree.data.time.RegularTimePeriod,71=>Find no block
+Thu Feb 27 16:37:55 CET 2020 org.jfree.data.time.TimeSeries,576
+Thu Feb 27 16:38:16 CET 2020 org.jfree.data.time.TimeSeries,579
+Thu Feb 27 16:39:27 CET 2020 org.jfree.data.time.TimeSeries,580
+Thu Feb 27 16:39:27 CET 2020 org.jfree.data.time.TimeSeries,581
+Thu Feb 27 16:39:51 CET 2020 org.jfree.data.time.TimeSeries,582
+Thu Feb 27 16:39:52 CET 2020 org.jfree.data.time.TimeSeries,596
+Thu Feb 27 16:40:42 CET 2020 org.jfree.data.time.TimeSeries,597
+Thu Feb 27 16:40:42 CET 2020 org.jfree.data.time.TimeSeries,598
+Thu Feb 27 16:49:43 CET 2020 org.jfree.data.time.TimeSeries,599
+Thu Feb 27 16:49:43 CET 2020 org.jfree.data.time.TimeSeries,600
+Thu Feb 27 16:49:43 CET 2020 org.jfree.data.time.TimeSeries,626
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+findBoundsByIteration();
+if(added){
+updateBoundsForAddedItem(item);
+if(getItemCount()>this.maximumItemCount){
+TimeSeriesDataItem d=(TimeSeriesDataItem)this.data.remove(0);
+updateBoundsForRemovedItem(d);
+}
+removeAgedItems(false);
+if(notify){
+fireSeriesChanged();
+}
+}
+
+Time : 20/02/27 16:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.5145909208469572 : [/home/florian/reproduce//chart/chart_3_buggy/source/org/jfree/data/time/TimeSeries.java=>0,0]
+if(end<start){
+throw new IllegalArgumentException("Requires start <= end.");
+}
+for(int i=0;i<=(end-start);i++){
+this.data.remove(start);
+}
+findBoundsByIteration();
+if(this.data.isEmpty()){
+this.timePeriodClass=null;
+}
+if(notify){
+fireSeriesChanged();
+}
+
+Time : 20/02/27 16:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//chart/chart_3_buggy/source/org/jfree/data/time/TimeSeries.java=>626,640]
+if(added){
+updateBoundsForAddedItem(item);
+if(getItemCount()>this.maximumItemCount){
+TimeSeriesDataItem d=(TimeSeriesDataItem)this.data.remove(0);
+updateBoundsForRemovedItem(d);
+}
+removeAgedItems(false);
+if(notify){
+fireSeriesChanged();
+}
+}
+
+Time : 20/02/27 16:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//chart/chart_3_buggy/source/org/jfree/data/time/TimeSeries.java=>626,640]
+findBoundsByIteration();
+if(added){
+updateBoundsForAddedItem(item);
+if(getItemCount()>this.maximumItemCount){
+TimeSeriesDataItem d=(TimeSeriesDataItem)this.data.remove(0);
+updateBoundsForRemovedItem(d);
+}
+removeAgedItems(false);
+if(notify){
+fireSeriesChanged();
+}
+}
+
+Time : 20/02/27 16:51
+----------------------------------------
+Success time : 20/02/27 16:51

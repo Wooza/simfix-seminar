@@ -1,0 +1,129 @@
+=================================================
+Project : lang_50	start : 20/02/28 09:31
+Current failed test : org.apache.commons.lang.time.FastDateFormatTest::test_changeDefault_Locale_DateTimeInstance | 20/02/28 09:31
+Fri Feb 28 09:31:26 CET 2020 org.apache.commons.lang.time.FastDateFormat,408
+Fri Feb 28 09:31:29 CET 2020 org.apache.commons.lang.time.FastDateFormat,425
+Fri Feb 28 09:31:42 CET 2020 org.apache.commons.lang.time.FastDateFormat,461
+Fri Feb 28 09:31:49 CET 2020 org.apache.commons.lang.time.FastDateFormat,462
+Fri Feb 28 09:31:55 CET 2020 org.apache.commons.lang.time.FastDateFormat,465
+Fri Feb 28 09:32:01 CET 2020 org.apache.commons.lang.time.FastDateFormat,466
+Fri Feb 28 09:32:01 CET 2020 org.apache.commons.lang.time.FastDateFormat,469
+Fri Feb 28 09:32:14 CET 2020 org.apache.commons.lang.time.FastDateFormat,470
+Fri Feb 28 09:32:29 CET 2020 org.apache.commons.lang.time.FastDateFormat,471
+Fri Feb 28 09:32:29 CET 2020 org.apache.commons.lang.time.FastDateFormat,472
+Fri Feb 28 09:32:29 CET 2020 org.apache.commons.lang.time.FastDateFormat,475
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(locale!=null){
+key=new Pair(key,locale);
+}
+SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateTimeInstance(dateStyle,timeStyle,locale);
+String pattern=formatter.toPattern();
+format=getInstance(pattern,timeZone,locale);
+
+Time : 20/02/28 09:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3354214422411372 : [/home/florian/reproduce//lang/lang_50_buggy/src/java/org/apache/commons/lang/time/FastDateFormat.java=>0,0]
+if(timeZone!=null){
+key=new Pair(key,timeZone);
+}
+if(locale!=null){
+key=new Pair(key,locale);
+}
+FastDateFormat format=(FastDateFormat)cDateInstanceCache.get(key);
+
+Time : 20/02/28 09:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//lang/lang_50_buggy/src/java/org/apache/commons/lang/time/FastDateFormat.java=>475,478]
+SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateTimeInstance(dateStyle,timeStyle,locale);
+String pattern=formatter.toPattern();
+format=getInstance(pattern,timeZone,locale);
+
+Time : 20/02/28 09:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//lang/lang_50_buggy/src/java/org/apache/commons/lang/time/FastDateFormat.java=>475,478]
+if(locale!=null){
+key=new Pair(key,locale);
+}
+SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateTimeInstance(dateStyle,timeStyle,locale);
+String pattern=formatter.toPattern();
+format=getInstance(pattern,timeZone,locale);
+
+Time : 20/02/28 09:32
+----------------------------------------
+Success time : 20/02/28 09:32
+Current failed test : org.apache.commons.lang.time.FastDateFormatTest::test_changeDefault_Locale_DateInstance | 20/02/28 09:32
+Fri Feb 28 09:33:09 CET 2020 org.apache.commons.lang.time.FastDateFormat,234
+Fri Feb 28 09:33:19 CET 2020 org.apache.commons.lang.time.FastDateFormat,293
+Fri Feb 28 09:33:26 CET 2020 org.apache.commons.lang.time.FastDateFormat,620
+Fri Feb 28 09:34:28 CET 2020 org.apache.commons.lang.time.FastDateFormat,249
+Fri Feb 28 09:34:42 CET 2020 org.apache.commons.lang.time.FastDateFormat,280
+Fri Feb 28 09:34:49 CET 2020 org.apache.commons.lang.time.FastDateFormat,281
+Fri Feb 28 09:34:55 CET 2020 org.apache.commons.lang.time.FastDateFormat,285
+Fri Feb 28 09:35:01 CET 2020 org.apache.commons.lang.time.FastDateFormat,286
+Fri Feb 28 09:35:01 CET 2020 org.apache.commons.lang.time.FastDateFormat,290
+Fri Feb 28 09:35:13 CET 2020 org.apache.commons.lang.time.FastDateFormat,291
+Fri Feb 28 09:35:26 CET 2020 org.apache.commons.lang.time.FastDateFormat,292
+Fri Feb 28 09:35:26 CET 2020 org.apache.commons.lang.time.FastDateFormat,296
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(locale!=null){
+key=new Pair(key,locale);
+}
+SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateInstance(style,locale);
+String pattern=formatter.toPattern();
+format=getInstance(pattern,timeZone,locale);
+
+Time : 20/02/28 09:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3548004166402725 : [/home/florian/reproduce//lang/lang_50_buggy/src/java/org/apache/commons/lang/time/FastDateFormat.java=>0,0]
+if(timeZone!=null){
+key=new Pair(key,timeZone);
+}
+if(locale!=null){
+key=new Pair(key,locale);
+}
+FastDateFormat format=(FastDateFormat)cDateInstanceCache.get(key);
+
+Time : 20/02/28 09:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//lang/lang_50_buggy/src/java/org/apache/commons/lang/time/FastDateFormat.java=>296,298]
+SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateInstance(style,locale);
+String pattern=formatter.toPattern();
+format=getInstance(pattern,timeZone,locale);
+
+Time : 20/02/28 09:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//lang/lang_50_buggy/src/java/org/apache/commons/lang/time/FastDateFormat.java=>296,298]
+if(locale!=null){
+key=new Pair(key,locale);
+}
+SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateInstance(style,locale);
+String pattern=formatter.toPattern();
+format=getInstance(pattern,timeZone,locale);
+
+Time : 20/02/28 09:35
+----------------------------------------
+Success time : 20/02/28 09:35

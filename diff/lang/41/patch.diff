@@ -1,0 +1,34 @@
+diff --git a/src/java/org/apache/commons/lang/ClassUtils.java b/src/java/org/apache/commons/lang/ClassUtils.java
+index d5de42b..e234b0f 100644
+--- a/src/java/org/apache/commons/lang/ClassUtils.java
++++ b/src/java/org/apache/commons/lang/ClassUtils.java
+@@ -166,10 +166,10 @@ public class ClassUtils {
+      * @return the class name without the package name or an empty string
+      */
+     public static String getShortClassName(Class<?> cls) {
+-        if (cls == null) {
+-            return StringUtils.EMPTY;
+-        }
+-        return getShortClassName(cls.getName());
++if(cls==null){
++return StringUtils.EMPTY;
++}
++return getShortCanonicalName(cls.getName());
+     }
+ 
+     /**
+@@ -226,10 +226,10 @@ public class ClassUtils {
+      * @return the package name or an empty string
+      */
+     public static String getPackageName(Class<?> cls) {
+-        if (cls == null) {
+-            return StringUtils.EMPTY;
+-        }
+-        return getPackageName(cls.getName());
++if(cls==null){
++return StringUtils.EMPTY;
++}
++return getPackageCanonicalName(cls.getName());
+     }
+ 
+     /**

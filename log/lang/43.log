@@ -1,0 +1,61 @@
+=================================================
+Project : lang_43	start : 20/02/28 10:41
+Current failed test : org.apache.commons.lang.text.ExtendedMessageFormatTest::testEscapedQuote_LANG_477 | 20/02/28 10:41
+Fri Feb 28 10:44:29 CET 2020 org.apache.commons.lang.text.ExtendedMessageFormat,158
+Fri Feb 28 10:44:38 CET 2020 org.apache.commons.lang.text.ExtendedMessageFormat,159
+Fri Feb 28 10:44:44 CET 2020 org.apache.commons.lang.text.ExtendedMessageFormat,419
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+int start=pos.getIndex();
+char[] c=pattern.toCharArray();
+if(escapingOn&&c[start]==QUOTE){
+next(pos);
+return appendTo==null?null:appendTo.append(QUOTE);
+}
+
+Time : 20/02/28 10:44
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0020093882692773 : [/home/florian/reproduce//lang/lang_43_buggy/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java=>0,0]
+swtich (c[pos.getIndex()]){
+case QUOTE :
+next(pos);
+return appendTo==null?null:appendTo.append(c,lastHold,pos.getIndex()-lastHold);
+
+default :
+next(pos);
+
+}
+
+Time : 20/02/28 10:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//lang/lang_43_buggy/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java=>419,423]
+int start=pos.getIndex();
+char[] c=pattern.toCharArray();
+if(escapingOn&&c[start]==QUOTE){
+return appendTo==null?null:appendTo.append(QUOTE);
+}
+
+Time : 20/02/28 10:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//lang/lang_43_buggy/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java=>419,423]
+int start=pos.getIndex();
+char[] c=pattern.toCharArray();
+if(escapingOn&&c[start]==QUOTE){
+next(pos);
+return appendTo==null?null:appendTo.append(QUOTE);
+}
+
+Time : 20/02/28 10:45
+----------------------------------------
+Success time : 20/02/28 10:45

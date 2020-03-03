@@ -1,0 +1,65 @@
+=================================================
+Project : lang_58	start : 20/02/28 10:40
+Current failed test : org.apache.commons.lang.math.NumberUtilsTest::testLang300 | 20/02/28 10:40
+Fri Feb 28 10:41:02 CET 2020 org.apache.commons.lang.math.NumberUtils,464
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(dec==null&&exp==null&&(numeric.charAt(0)=='-'&&isDigits(numeric.substring(1))||isDigits(numeric))){
+try{
+return createLong(numeric);
+}catch (NumberFormatException nfe) {
+}
+
+return createBigInteger(numeric);
+}
+
+Time : 20/02/28 10:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.075005835983946 : [/home/florian/reproduce//lang/lang_58_buggy/src/java/org/apache/commons/lang/math/NumberUtils.java=>0,0]
+if(dec==null&&exp==null&&(numeric.charAt(0)=='-'&&isDigits(numeric.substring(1))||isDigits(numeric))){
+try{
+return createLong(numeric);
+}catch (NumberFormatException nfe) {
+}
+
+return createBigInteger(numeric);
+}
+
+Time : 20/02/28 10:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//lang/lang_58_buggy/src/java/org/apache/commons/lang/math/NumberUtils.java=>452,463]
+if(dec==null&&exp==null&&isDigits(numeric.substring(1))&&(numeric.charAt(0)=='-'||Character.isDigit(numeric.charAt(0)))){
+try{
+return createLong(numeric);
+}catch (NumberFormatException nfe) {
+}
+
+return createBigInteger(numeric);
+}
+
+Time : 20/02/28 10:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//lang/lang_58_buggy/src/java/org/apache/commons/lang/math/NumberUtils.java=>452,463]
+if(dec==null&&exp==null&&(numeric.charAt(0)=='-'&&isDigits(numeric.substring(1))||isDigits(numeric))){
+try{
+return createLong(numeric);
+}catch (NumberFormatException nfe) {
+}
+
+return createBigInteger(numeric);
+}
+
+Time : 20/02/28 10:41
+----------------------------------------
+Success time : 20/02/28 10:41

@@ -1,0 +1,45 @@
+=================================================
+Project : math_5	start : 20/02/28 18:48
+Current failed test : org.apache.commons.math3.complex.ComplexTest::testReciprocalZero | 20/02/28 18:48
+Fri Feb 28 18:48:55 CET 2020 org.apache.commons.math3.complex.Complex,305
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(real==0.0&&imaginary==0.0){
+return INF;
+}
+
+Time : 20/02/28 18:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7606388292556647 : [/home/florian/reproduce//math/math_5_buggy/src/main/java/org/apache/commons/math3/complex/Complex.java=>0,0]
+if(Double.isInfinite(real)||Double.isInfinite(imaginary)){
+return INF;
+}
+
+Time : 20/02/28 18:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/florian/reproduce//math/math_5_buggy/src/main/java/org/apache/commons/math3/complex/Complex.java=>304,306]
+if(real==0.0&&imaginary==0.0){
+return NaN;
+}
+
+Time : 20/02/28 18:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/florian/reproduce//math/math_5_buggy/src/main/java/org/apache/commons/math3/complex/Complex.java=>304,306]
+if(real==0.0&&imaginary==0.0){
+return INF;
+}
+
+Time : 20/02/28 18:50
+----------------------------------------
+Success time : 20/02/28 18:50
